@@ -1,0 +1,18 @@
+{
+  "name": "graph-ql-workshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "apollo-server": "^3.7.0",
+    "graphql": "^16.5.0",
+    "nodemon": "^2.0.16",
+    "uuid": "^8.3.2"
+  }
+}
