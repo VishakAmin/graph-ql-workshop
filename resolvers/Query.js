@@ -13,8 +13,8 @@ exports.Query = {
 
   product: (parent, args, context) => {
       const productId = args.id;
-      return products.find((product)=> product.id === productId)
-
+      console.log(context);
+      return products.find((item)=> item.id === productId)
   }
 }
 
