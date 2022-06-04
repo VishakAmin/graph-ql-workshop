@@ -1,8 +1,21 @@
 const { gql } = require("apollo-server");
 
+// Scalar 
+// String, Int, Float , Boolean   
 exports.typeDefs = gql`
   type Query {
-    hello: String!
-    numberOfProducts: String!
+    hello: [Int]
+    numberOfProducts: Int!
+    products: [Product!]!
+  }
+
+  type Product {
+    id: ID!
+    title: String!
+    description: String!
+    quantity: Int!
+    price: Float!
+    image: String!  
+    category: String!
   }
 `;
