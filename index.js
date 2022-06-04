@@ -2,6 +2,7 @@ const { ApolloServer } = require("apollo-server");
 const { Query } = require("./resolvers/Query");
 const { typeDefs } = require("./schema");
 
+
 const server = new ApolloServer({
   typeDefs: typeDefs,
   resolvers: {
